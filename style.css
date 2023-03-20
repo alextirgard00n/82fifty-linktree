@@ -7,28 +7,41 @@
 }
 
 body {
-    color: #FFFFFF;
-    background-image: url(./media/Background\ CD\ 3000.jpg);
-    background-position: center;
-    background-size: 110% auto;
-    /* background-size: cover; */
-    backdrop-filter: blur(16px) brightness(.6);
-    scale: 1 !important;
-
-
-
-
-
-}
-
-.profile-media {
-    /* height: 100vh; */
     height: 100vh;
+    position: relative;
+    color: #FFFFFF;
+    background-color: black;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
+
+body:before {
+    background-image: url(./media/Background\ CD\ 3000.jpg);
+    content: "";
+    background-position: 50%;
+    /* background-size: 110% auto; */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    filter: blur(16px);
+    opacity: 0.63;
+    z-index: -1;
+    /* transform: scale(1.1); */
+
+
+}
+
+
+/* .profile-media {
+
+    min-height: 100vh;
+} */
 
 
 
@@ -36,7 +49,7 @@ body {
     width: 600px;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(55, 55, 55); */
+    padding: 40px 0;
 }
 
 .profile-header {
@@ -102,5 +115,5 @@ ul {
     height: 74px;
     border: 2px solid #FFFFFF;
     border-radius: 17px;
-    /* opacity: .8; */
+
 }
