@@ -189,4 +189,8 @@ ul {
     iframe {
         height: 250px;
     }
+
+    .video-player {
+        transform: scale(110%);
+    }
 }
