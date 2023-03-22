@@ -18,27 +18,39 @@ body {
 }
 
 
-body:before {
-    background-image: url(./media/Background\ CD\ 3000.jpg);
+/* body:before {
+    background-image: url(./media/82fifty-logo.jpg);
     content: "";
     background-position: 50%;
-    /* background-size: 110% auto; */
     background-size: cover;
     height: 100%;
-    /* transform: scale(1.1); */
     width: 100%;
     left: 0;
     position: absolute;
     top: 0;
     filter: blur(16px);
     opacity: 0.63;
-    z-index: -1;
-    /* transform: scale(110%); */
-}
+    z-index: -2;
+} */
 
 main {
     width: 640px;
 
+}
+
+.video-player {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 30px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: blur(16px);
+    opacity: 40%;
+    z-index: -1;
+    transform: scale(140%);
 }
 
 .profile-container {
@@ -52,13 +64,12 @@ main {
 .profile-header {
     margin-bottom: 15px;
     display: flex;
-
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
-    background-image: url(./media/Background\ CD\ 3000.jpg);
+    background-image: url(./media/82fifty-logo.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
