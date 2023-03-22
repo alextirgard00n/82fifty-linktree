@@ -18,7 +18,7 @@ body {
 }
 
 
-/* body:before {
+body:before {
     background-image: url(./media/82fifty-logo.jpg);
     content: "";
     background-position: 50%;
@@ -31,14 +31,14 @@ body {
     filter: blur(16px);
     opacity: 0.63;
     z-index: -2;
-} */
+}
 
 main {
     width: 640px;
 
 }
 
-.video-player {
+/* .video-player {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -51,7 +51,7 @@ main {
     opacity: 40%;
     z-index: -1;
     transform: scale(140%);
-}
+} */
 
 .profile-container {
     margin: 0 auto;
